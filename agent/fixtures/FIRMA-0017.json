@@ -1,0 +1,134 @@
+{
+  "id": "FIRMA-0017",
+  "nazev": "Zamer 17 s.r.o.",
+  "predmet": "Maloobchod a velkoobchod",
+  "obrat": 912554,
+  "zamestnanci": 0,
+  "provozovna": false,
+  "dph_prah": 2000000,
+  "povinnosti": [
+    {
+      "kod": "OR_ZAPIS",
+      "nazev": "Zapis spolecnosti do obchodniho rejstriku",
+      "kdy": "ihned",
+      "trigger": "kazde nove s.r.o. ze zakona",
+      "zdroj": "z. c. 90/2012 Sb., o obchodnich korporacich; z. c. 304/2013 Sb., vznik s.r.o. zapisem do OR",
+      "lhuta": "navrh na zapis do 6 mesicu od zalozeni",
+      "verified": false,
+      "semafor": "zelena",
+      "skryta": false,
+      "pokuta_kc": 0
+    },
+    {
+      "kod": "DPPO",
+      "nazev": "Registrace k dani z prijmu pravnickych osob",
+      "kdy": "ihned",
+      "trigger": "kazde nove s.r.o. ze zakona",
+      "zdroj": "z. c. 586/1992 Sb., o danich z prijmu, § 39 (registracni povinnost)",
+      "lhuta": "do 15 dnu od vzniku spolecnosti",
+      "verified": false,
+      "semafor": "zelena",
+      "skryta": false,
+      "pokuta_kc": 0
+    },
+    {
+      "kod": "DATOVKA",
+      "nazev": "Zrizeni datove schranky",
+      "kdy": "ihned",
+      "trigger": "kazde nove s.r.o. ze zakona",
+      "zdroj": "z. c. 300/2008 Sb., o elektronickych ukonech, § 5 (PO zrizena ze zakona automaticky)",
+      "lhuta": "automaticky pri zapisu do OR",
+      "verified": false,
+      "semafor": "zelena",
+      "skryta": false,
+      "pokuta_kc": 0
+    },
+    {
+      "kod": "SIDLO_OZNACENI",
+      "nazev": "Oznaceni sidla firmy",
+      "kdy": "ihned",
+      "trigger": "kazde nove s.r.o. ze zakona",
+      "zdroj": "z. c. 455/1991 Sb., zivnostensky zakon, § 17 odst. 7 / § 31 (oznaceni sidla a provozovny)",
+      "lhuta": "trvale od zahajeni cinnosti",
+      "verified": false,
+      "semafor": "zelena",
+      "skryta": true,
+      "pokuta_kc": 20000
+    },
+    {
+      "kod": "SKUTECNI_MAJITELE",
+      "nazev": "Zapis do evidence skutecnych majitelu",
+      "kdy": "ihned",
+      "trigger": "kazde nove s.r.o. ze zakona",
+      "zdroj": "z. c. 37/2021 Sb., o evidenci skutecnych majitelu, automaticky pro nove s.r.o., jinak bez zbytecneho odkladu",
+      "lhuta": "pri/bez zbytecneho odkladu po zapisu do OR",
+      "verified": false,
+      "semafor": "zelena",
+      "skryta": true,
+      "pokuta_kc": 500000
+    },
+    {
+      "kod": "ZIVNOST_VOLNA",
+      "nazev": "Ohlaseni volne zivnosti",
+      "kdy": "ihned",
+      "trigger": "obor 'Maloobchod a velkoobchod' = volna zivnost (klasifikace ze ZR)",
+      "zdroj": "z. c. 455/1991 Sb., zivnostensky zakon, priloha 4, § 25 (ohlasovaci zivnost volna)",
+      "lhuta": "pred zahajenim cinnosti",
+      "verified": false,
+      "semafor": "zelena",
+      "skryta": false,
+      "pokuta_kc": 0
+    }
+  ],
+  "nase_kody": [
+    "DATOVKA",
+    "DPPO",
+    "OR_ZAPIS",
+    "SIDLO_OZNACENI",
+    "SKUTECNI_MAJITELE",
+    "ZIVNOST_VOLNA"
+  ],
+  "baseline_kody": [
+    "DATOVKA",
+    "DPPO",
+    "OR_ZAPIS",
+    "ZIVNOST_VOLNA"
+  ],
+  "skryte_kody": [
+    "SIDLO_OZNACENI",
+    "SKUTECNI_MAJITELE"
+  ],
+  "plan": [],
+  "uspora_kc": 520000,
+  "riziko_breakdown": [
+    {
+      "kod": "SIDLO_OZNACENI",
+      "castka": 20000,
+      "typ": "max",
+      "text": "az 20 000 Kc za neoznaceni sidla",
+      "zdroj": "zivn. z. 455/1991 §31/62"
+    },
+    {
+      "kod": "SKUTECNI_MAJITELE",
+      "castka": 500000,
+      "typ": "max",
+      "text": "az 500 000 Kc + nelze vyplatit zisk z vlastni firmy + pozastavena hlasovaci prava",
+      "zdroj": "z. 37/2021 Sb."
+    }
+  ],
+  "burden": 0,
+  "registry_lookups": [
+    {
+      "typ": "zivnost",
+      "klic": "Maloobchod a velkoobchod",
+      "vysledek": "volna",
+      "nahradil_otazku": "Je obor regulovany (volna/vazana/koncese)?"
+    },
+    {
+      "typ": "ares",
+      "klic": "13356886",
+      "vysledek": "Partner Holding 3 s.r.o. - aktivni",
+      "nahradil_otazku": "Existuje a je aktivni spolecnik-firma?"
+    }
+  ]
+}

@@ -21,12 +21,14 @@ tisíc. Společník stojí pár stovek měsíčně. Pojistka, co se zaplatí sto
 | [**DEMO.md**](./DEMO.md) | Live demo skript „Anna zakládá e-shop" (split screen + ÚSPORA-meter + simulace budoucnosti) |
 | [**FEATURES.md**](./FEATURES.md) | Konkrétní featury s tagem 🟢 DEMO / 🟡 vizuál / 🔵 roadmapa (co reálně stavíme vs slide) |
 | [**CUSTOMER.md**](./CUSTOMER.md) | Cílová skupina (ICP), kdo platí (B2C/B2B2C/B2G), byznys model |
+| [**KONKURENCE.md**](./KONKURENCE.md) | Konkurence (globální TOP 10 + ČR) a naše odlišnost |
+| [**agent/**](./agent/) | 🧠 **Agent core** (Python, zero-dep) — derivace povinností, once-only, plán v čase, úspora. JSON kontrakt pro UI + `fixtures/`. Viz [agent/README.md](./agent/README.md) |
 
 ## Stav
 
 - [x] Koncept zamčený (Společník = legal cofounder, money-first)
 - [x] Datová analýza + zpětně odvozená grading pravidla (propásnuté 0 / zbytečné 0)
 - [x] Reálné sazby pokut ověřené se zdroji
-- [ ] Agent brain (Python, nad `tools.py`) — beat baseline na scoreru
-- [ ] Demo UI (split screen, ÚSPORA-meter, time slider)
+- [x] **Agent brain** (Python, nad `tools.py`) — **0/0 vs baseline 28/2, burden 0** ✅ `agent/`
+- [ ] Demo UI (split screen, ÚSPORA-meter, time slider) — *kolega, napojí na `agent/fixtures/` nebo `server.py`*
 - [ ] Pitch deck (design dle PITCH.md)

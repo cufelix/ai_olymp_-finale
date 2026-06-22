@@ -1,0 +1,15 @@
+# Datový balíček organizátorů (sandbox) — NEpublikovat na veřejný repo.
+# Každý člen ho má lokálně vedle agent/ (../data/).
+data/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / nástroje
+node_modules/
+
+# OS
+.DS_Store
