@@ -22,7 +22,8 @@ tisíc. Společník stojí pár stovek měsíčně. Pojistka, co se zaplatí sto
 | [**FEATURES.md**](./FEATURES.md) | Konkrétní featury s tagem 🟢 DEMO / 🟡 vizuál / 🔵 roadmapa (co reálně stavíme vs slide) |
 | [**CUSTOMER.md**](./CUSTOMER.md) | Cílová skupina (ICP), kdo platí (B2C/B2B2C/B2G), byznys model |
 | [**KONKURENCE.md**](./KONKURENCE.md) | Konkurence (globální TOP 10 + ČR) a naše odlišnost |
-| [**agent/**](./agent/) | 🧠 **Agent core** (Python, zero-dep) — derivace povinností, once-only, plán v čase, úspora. JSON kontrakt pro UI + `fixtures/`. Viz [agent/README.md](./agent/README.md) |
+| [**JAK_TO_FUNGUJE.md**](./JAK_TO_FUNGUJE.md) | 🎤 **Fact-sheet pro pitch deck** — reálná čísla, jak to funguje, co je real vs simulace (= tech shrnutí na 1 A4) |
+| [**agent/**](./agent/) | 🧠 **Agent core** (Python, zero-dep) — derivace povinností, once-only, plán v čase, timeline, úspora. JSON kontrakt + `fixtures/` (`all.json` = 1 import pro UI). Viz [agent/README.md](./agent/README.md) |
 
 ## Stav
 

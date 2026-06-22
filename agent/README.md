@@ -16,7 +16,7 @@ reálná AI, ne formulář".
 | `run_eval.py` | důkaz vs baseline přes `bodovac.py` (0/0) |
 | `server.py` | tenké HTTP API (jen stdlib) pro UI |
 | `export.py` | statické JSON fixtures do `fixtures/` (offline, bez backendu) |
-| `fixtures/` | předgenerované rozbory — **UI může číst přímo, žádný server** |
+| `fixtures/` | předgenerované rozbory — **UI může číst přímo, žádný server**. `all.json` = vše v 1 souboru (1 import), `cases.json` = výběr, `<id>.json` = jednotlivě |
 
 ## Spuštění
 

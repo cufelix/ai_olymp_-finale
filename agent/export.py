@@ -39,8 +39,12 @@ def main():
     cases = list_cases()
     _write("cases.json", cases)
 
+    vse = {}
     for c in cases:
-        _write(f"{c['id']}.json", analyze(c["id"]))
+        a = analyze(c["id"])
+        vse[c["id"]] = a
+        _write(f"{c['id']}.json", a)
+    _write("all.json", vse)   # vsechny rozbory v jednom souboru (1 import pro UI)
 
     # Dukaz vs baseline na oznacenych pripadech (6) + zatez zakladatele.
     ids = [f"FIRMA-{i:04d}" for i in range(1, 7)]
