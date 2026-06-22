@@ -26,6 +26,7 @@ import tools  # rozhrani sandboxu (get_intent, lookup_registry, schedule, ...)
 from rules import normalize, derive, ODLOZENE
 from baseline import baseline_codes
 from legislation import POKUTY, DPH_PRAH_OBRAT
+import timeline
 
 
 def _termin(kod):
@@ -61,7 +62,7 @@ def _once_only_lookups(intent, predmet):
     return ziv_typ, lookups
 
 
-def analyze(intent_id):
+def analyze(intent_id, datum_zalozeni=None):
     intent = tools.get_intent(intent_id)
     if not intent:
         return {"error": f"neznamy zamer {intent_id}"}
@@ -104,6 +105,9 @@ def analyze(intent_id):
         pk = POKUTY.get(p["kod"])
         p["pokuta_kc"] = pk["max_kc"] if (pk and p["kod"] in skryte) else 0
 
+    # Casova osa: projekce konkretnich dat (time-travel demo, kalendar).
+    osa = timeline.simulate(obrat, povinnosti, datum_zalozeni)
+
     return {
         "id": intent_id,
         "nazev": intent.get("nazev"),
@@ -117,6 +121,7 @@ def analyze(intent_id):
         "baseline_kody": sorted(base),
         "skryte_kody": sorted(skryte),
         "plan": plan,
+        "timeline": osa,
         "uspora_kc": uspora,
         "riziko_breakdown": riziko,
         "burden": tools.founder_burden(),     # 0 = nic jsme se nezeptali (once-only)

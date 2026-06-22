@@ -58,6 +58,17 @@ python3 agent/export.py            # vygeneruje fixtures/*.json pro UI
       "duvod": "obrat 4 460 716 Kc > prah 2 000 000 Kc", "lhuta": "..." }
   ],
 
+  "timeline": {                         // PROJEKCE konkrétních dat (time-travel + kalendář)
+    "datum_zalozeni_cz": "22. 6. 2026", "mesicni_obrat": 371726,
+    "udalosti": [                       // seřazeno dle termínu; typ: "ihned" | "projekce"
+      { "povinnost": "DPH", "typ": "projekce",
+        "udalost": "prekroceni obratu 2 mil. Kc",
+        "datum_udalosti_cz": "3. 12. 2026",   // kdy událost nastane (projekce)
+        "termin_cz": "15. 1. 2027", "za_dni": 207, "za_mesicu": 5.4,
+        "predpoklad": "linearni rust obratu (rocni/12)" }   // jasně označeno = simulace
+    ]
+  },
+
   "uspora_kc": 720000,                  // ÚSPORA-meter (suma vyhnutých pokut)
   "riziko_breakdown": [                 // rozpad expozice po položkách
     { "kod": "SKUTECNI_MAJITELE", "castka": 500000, "typ": "max", "text": "...", "zdroj": "..." }

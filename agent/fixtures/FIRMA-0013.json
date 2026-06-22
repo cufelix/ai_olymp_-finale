@@ -122,6 +122,93 @@
       "lhuta": "prihlaska do 15 dnu po skonceni mesice prekroceni prahu"
     }
   ],
+  "timeline": {
+    "datum_zalozeni": "2026-06-22",
+    "datum_zalozeni_cz": "22. 6. 2026",
+    "mesicni_obrat": 369497,
+    "udalosti": [
+      {
+        "povinnost": "OR_ZAPIS",
+        "nazev": "Zapis spolecnosti do obchodniho rejstriku",
+        "typ": "ihned",
+        "datum_udalosti": "2026-06-22",
+        "datum_udalosti_cz": "22. 6. 2026",
+        "termin": "2026-06-22",
+        "termin_cz": "22. 6. 2026",
+        "za_dni": 0,
+        "lhuta": "navrh na zapis do 6 mesicu od zalozeni"
+      },
+      {
+        "povinnost": "DPPO",
+        "nazev": "Registrace k dani z prijmu pravnickych osob",
+        "typ": "ihned",
+        "datum_udalosti": "2026-06-22",
+        "datum_udalosti_cz": "22. 6. 2026",
+        "termin": "2026-06-22",
+        "termin_cz": "22. 6. 2026",
+        "za_dni": 0,
+        "lhuta": "do 15 dnu od vzniku spolecnosti"
+      },
+      {
+        "povinnost": "DATOVKA",
+        "nazev": "Zrizeni datove schranky",
+        "typ": "ihned",
+        "datum_udalosti": "2026-06-22",
+        "datum_udalosti_cz": "22. 6. 2026",
+        "termin": "2026-06-22",
+        "termin_cz": "22. 6. 2026",
+        "za_dni": 0,
+        "lhuta": "automaticky pri zapisu do OR"
+      },
+      {
+        "povinnost": "SIDLO_OZNACENI",
+        "nazev": "Oznaceni sidla firmy",
+        "typ": "ihned",
+        "datum_udalosti": "2026-06-22",
+        "datum_udalosti_cz": "22. 6. 2026",
+        "termin": "2026-06-22",
+        "termin_cz": "22. 6. 2026",
+        "za_dni": 0,
+        "lhuta": "trvale od zahajeni cinnosti"
+      },
+      {
+        "povinnost": "SKUTECNI_MAJITELE",
+        "nazev": "Zapis do evidence skutecnych majitelu",
+        "typ": "ihned",
+        "datum_udalosti": "2026-06-22",
+        "datum_udalosti_cz": "22. 6. 2026",
+        "termin": "2026-06-22",
+        "termin_cz": "22. 6. 2026",
+        "za_dni": 0,
+        "lhuta": "pri/bez zbytecneho odkladu po zapisu do OR"
+      },
+      {
+        "povinnost": "ZIVNOST_VAZANA",
+        "nazev": "Ohlaseni vazane zivnosti (odborna zpusobilost)",
+        "typ": "ihned",
+        "datum_udalosti": "2026-06-22",
+        "datum_udalosti_cz": "22. 6. 2026",
+        "termin": "2026-06-22",
+        "termin_cz": "22. 6. 2026",
+        "za_dni": 0,
+        "lhuta": "pred zahajenim cinnosti"
+      },
+      {
+        "povinnost": "DPH",
+        "nazev": "Registrace k DPH po prekroceni obratu",
+        "typ": "projekce",
+        "udalost": "prekroceni obratu 2 mil. Kc",
+        "datum_udalosti": "2026-12-04",
+        "datum_udalosti_cz": "4. 12. 2026",
+        "termin": "2027-01-15",
+        "termin_cz": "15. 1. 2027",
+        "za_dni": 207,
+        "za_mesicu": 5.4,
+        "predpoklad": "linearni rust obratu (rocni/12)",
+        "lhuta": "prihlaska do 15 dnu po skonceni mesice prekroceni prahu"
+      }
+    ]
+  },
   "uspora_kc": 620000,
   "riziko_breakdown": [
     {
