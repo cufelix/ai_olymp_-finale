@@ -19,6 +19,8 @@ tisíc. Společník stojí pár stovek měsíčně. Pojistka, co se zaplatí sto
 | [**SPEC.md**](./SPEC.md) | Master spec: koncept, zákazník, architektura, odvozená pravidla z dat, API, úspora-ledger (pokuty + zdroje), byznys, etika, scope, rozdělení práce |
 | [**PITCH.md**](./PITCH.md) | 3min pitch (časovaný) + 6 slidů decku + Q&A munice |
 | [**DEMO.md**](./DEMO.md) | Live demo skript „Anna zakládá e-shop" (split screen + ÚSPORA-meter + simulace budoucnosti) |
+| [**FEATURES.md**](./FEATURES.md) | Konkrétní featury s tagem 🟢 DEMO / 🟡 vizuál / 🔵 roadmapa (co reálně stavíme vs slide) |
+| [**CUSTOMER.md**](./CUSTOMER.md) | Cílová skupina (ICP), kdo platí (B2C/B2B2C/B2G), byznys model |
 
 ## Stav
 
